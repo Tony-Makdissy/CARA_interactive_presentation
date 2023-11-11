@@ -1,40 +1,67 @@
+<!-- FILEPATH: /home/tony/LiSi/CARA/Our paper/reveal.js/index.html -->
+<!-- This is an HTML file that contains a presentation built using reveal.js library. -->
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Best CARA presentation</title>
 
+		<!-- Reset CSS -->
 		<link rel="stylesheet" href="dist/reset.css">
+
+		<!-- reveal.js CSS -->
 		<link rel="stylesheet" href="dist/reveal.css">
+
+		<!-- Theme CSS -->
 		<link rel="stylesheet" href="dist/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
+		<!-- Syntax highlighting CSS -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
+		<!-- The presentation container -->
 		<div class="reveal">
+			<!-- Slides container -->
 			<div class="slides">
+				<!-- Individual slides -->
 				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section> vertical slide 1 </section>
+					<section> vertical slide 2 </section>
+				</section>
+				<section>Slide 3</section>
 			</div>
 		</div>
 
+		<!-- reveal.js library -->
 		<script src="dist/reveal.js"></script>
+
+		<!-- Notes plugin -->
 		<script src="plugin/notes/notes.js"></script>
+
+		<!-- Markdown plugin -->
 		<script src="plugin/markdown/markdown.js"></script>
+
+		<!-- Syntax highlighting plugin -->
 		<script src="plugin/highlight/highlight.js"></script>
+
+		<!-- Initialization and configuration -->
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				slideNumber: true,
+				hashOneBasedIndex: false,
+				showNotes: false,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
 </html>
+<!-- This is an HTML file that contains a presentation built using reveal.js library. It includes CSS files for reset, reveal.js, theme, and syntax highlighting. It also includes JavaScript files for reveal.js library, notes, markdown, and syntax highlighting plugins. The presentation is contained in a div with class "reveal" and slides are contained in a div with class "slides". Initialization and configuration of the presentation is done using the Reveal.initialize() method. -->
